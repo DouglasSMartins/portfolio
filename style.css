@@ -15,8 +15,8 @@ header {
 }
 
 .profile-img {
-  width: 120px;
-  height: 120px;
+  width: 200px; /* Aumenta a largura da imagem */
+  height: 200px; /* Aumenta a altura da imagem */
   border-radius: 50%;
   margin-bottom: 1rem;
   object-fit: cover;
@@ -34,16 +34,65 @@ section {
 
 h1, h2 {
   margin-bottom: 0.5rem;
+  font-family: 'Segoe UI', sans-serif; /* Garantir a mesma fonte */
 }
 
 h2 {
   color: #2f3542;
   border-bottom: 2px solid #ced6e0;
   padding-bottom: 0.5rem;
+  font-size: 1.8rem; /* Tamanho do título igual ao da seção "O que posso fazer" */
+  text-align: left; /* Alinhamento igual para manter a consistência */
 }
 
+/* Estilo específico para a seção "Sobre" */
+.sobre {
+  max-width: 800px;
+  margin: 2rem auto; /* Garante que o conteúdo fique centralizado */
+  padding: 2rem; /* Adiciona espaço ao redor do conteúdo */
+  background: #ffffff; /* Fundo branco, igual ao restante das seções */
+  border-radius: 8px; /* Bordas arredondadas para um estilo mais suave */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* Sombra suave para dar destaque */
+}
+
+.sobre h2 {
+  font-size: 1.8rem; /* Tamanho do título ajustado */
+  color: #2f3542; /* Cor do título em um tom mais sóbrio */
+  margin-bottom: 1rem;
+  text-align: left; /* Alinha o título à esquerda */
+  border-bottom: 2px solid #ced6e0; /* Adiciona linha embaixo do título */
+  padding-bottom: 0.5rem;
+}
+
+.sobre p {
+  font-size: 1rem;
+  color: #333; /* Cor do texto igual ao da seção "O que posso fazer" */
+  margin-bottom: 1.5rem; /* Espaçamento entre os parágrafos */
+  text-align: justify; /* Texto justificado para melhorar a legibilidade */
+}
+
+.sobre p:last-child {
+  margin-bottom: 0; /* Remove margem do último parágrafo */
+}
+
+/* Estilo para a seção "O que posso fazer" */
 .projeto {
   margin-bottom: 2rem;
+}
+
+.projeto h3 {
+  font-size: 1.3rem; /* Tamanho de título igual ao da seção "O que posso fazer" */
+  font-weight: 600;
+  color: #2f3542; /* Cor do título igual ao "Sobre" */
+  margin-bottom: 0.5rem;
+}
+
+.projeto p {
+  font-size: 1rem;
+  color: #333; /* Mesma cor do texto */
+  margin-bottom: 1rem;
+  line-height: 1.6; /* Ajusta o espaçamento entre as linhas para leitura confortável */
+  text-align: justify;
 }
 
 a {
